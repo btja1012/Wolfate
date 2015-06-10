@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="defaults.css" rel="stylesheet" />
+  </head>
+
+  <body>
+      <nav class="basic-nav">
+        <ul>
+            <li><a href="/login">Already a User?</a></li>
+            <li><a href="/">Go Back Home</a></li>  
+        </ul>
+      </nav>
+      <section>
+        <article class="user-registry">
+            <h2>Signup</h2>
+            <form method="post">
+            <ul>
+                <li>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" value="{{firstname}}">
+                    <span class="error">{{firstname_error}}</span>
+                </li>
+                <li>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" value="{{lastname}}">
+                    <span class="error">{{lastname_error}}</span>
+                </li>
+                <li>
+                    <label for="username">User Name</label>
+                    <input type="text" name="username" value="{{username}}">
+                    <span class="error">{{username_error}}</span>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" value="">
+                    <span class="error">{{email_error}}</span>
+                </li>
+                <li>
+                    <label for="username">Password</label>
+                    <input type="password" name="password" value="">
+                    <span class="error">{{password_error}}</span>
+                </li>
+                <li>
+                    <label for="veify">Password</label>
+                    <input type="password" name="verify" value="">
+                    <span class="error">{{verify_error}}</span>
+                </li>
+                <li><input type="submit"></li>
+            </ul>
+            </form>
+        </article>
+      </section>
+
+
+      
+  </body>
+
+</html>
