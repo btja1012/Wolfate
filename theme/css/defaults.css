@@ -1,136 +1,68 @@
-/* generals */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-  margin: 0;
-  padding: 0; }
+/*
+Error: Undefined variable: "$lato".
+        on line 5 of ./theme/scss/defaults.scss
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+1: // GLOBAL VARIABLES
+2: body{
+3:     background-color: #fff;
+4:     color: #000;
+5:     font-family: $lato;
+6:     -webkit-font-smoothing: antialiased;
+7: }
+8: 
+9: .block{display: block;}
+10: 
 
-fieldset, img {
-  border: 0; }
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal; }
-
-ol, ul {
-  list-style: none; }
-
-caption, th {
-  text-align: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal; }
-
-q:before, q:after {
-  content: ''; }
-
-abbr, acronym {
-  border: 0; }
-
-/* texts */
-:link, :visited {
-  text-decoration: none; }
-
-ul, ol {
-  list-style: none; }
-
-h1, h2, h3, h4, h5, h6, pre, code {
-  font-size: 1em; }
-
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
-  margin: 0;
-  padding: 0; }
-
-a img, :link img, :visited img {
-  border: none; }
-
-address {
-  font-style: normal; }
-
-img {
-  vertical-align: top; }
-
-/* Global variables */
-body {
-  background-color: #fff;
-  color: #000;
-  font-family: "Lato", sans-serif; }
-
-.block {
-  display: block; }
-
-.main-nav {
-  background-color: #2d303d;
-  overflow: hidden; }
-  .main-nav h1 {
-    display: inline-block;
-    float: left;
-    padding-left: 20px; }
-    .main-nav h1 a {
-      font-size: 31px;
-      display: inline-block;
-      vertical-align: top;
-      padding: 17px 0 0 10px;
-      color: #fff; }
-      .main-nav h1 a .bold {
-        font-weight: 800;
-        color: #2a8cd0; }
-      .main-nav h1 a .block {
-        font-size: 18px;
-        color: #37baff;
-        font-weight: 300; }
-    .main-nav h1:before {
-      content: "";
-      display: inline-block;
-      width: 70px;
-      height: 95px;
-      background: url(img/defaults/logo.png) no-repeat center;
-      background-size: 68px auto; }
-
-body.home a.home,
-body.ourTools a.ourTools,
-body.services a.services,
-body.contact a.contact,
-body.login a.login,
-.site-nav a:hover {
-  color: #00c6ff; }
-  body.home a.home:before,
-  body.ourTools a.ourTools:before,
-  body.services a.services:before,
-  body.contact a.contact:before,
-  body.login a.login:before,
-  .site-nav a:hover:before {
-    top: 0px; }
-
-.site-nav {
-  float: right;
-  overflow: hidden; }
-  .site-nav li {
-    float: left;
-    padding: 0 24px;
-    color: #fff; }
-  .site-nav a {
-    display: block;
-    line-height: 95px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 300;
-    box-sizing: content-box;
-    position: relative;
-    transition: color 0.3s; }
-    .site-nav a:before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: #00c6ff;
-      transition: all 0.3s; }
-  .site-nav .double a {
-    display: inline-block; }
+Backtrace:
+./theme/scss/defaults.scss:5
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/engine.rb:268:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$lato\".\A         on line 5 of ./theme/scss/defaults.scss\A \A 1: // GLOBAL VARIABLES\A 2: body{\A 3:     background-color: #fff;\A 4:     color: #000;\A 5:     font-family: $lato;\A 6:     -webkit-font-smoothing: antialiased;\A 7: }\A 8: \A 9: .block{display: block;}\A 10: "; }
