@@ -13,6 +13,7 @@ MongoClient.connect('mongodb://localhost:27017/wolfate', function(err, db) {
     app.set('view engine', 'html');
     app.set('views', __dirname + '/views');
     app.use(express.static(__dirname + '/theme/css'));
+    app.use(express.static(__dirname + '/theme/fonts'));
     app.use(express.static(__dirname + '/theme'));
 
     // Express middleware to populate 'req.cookies' so we can access cookies
