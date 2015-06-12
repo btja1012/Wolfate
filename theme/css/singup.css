@@ -57,8 +57,8 @@ img {
 /* Global variables */
 @font-face {
   font-family: 'wolfate';
-  src: url("fonts/wolfate/wolfate.eot?fr5pip");
-  src: url("fonts/wolfate/wolfate.eot?#iefixfr5pip") format("embedded-opentype"), url("fonts/wolfate/wolfate.ttf?fr5pip") format("truetype"), url("fonts/wolfate/wolfate.woff?fr5pip") format("woff"), url("fonts/wolfate/wolfate.svg?fr5pip#wolfate") format("svg");
+  src: url("fonts/wolfate/wolfate.eot?fgc8uy");
+  src: url("fonts/wolfate/wolfate.eot?#iefixfgc8uy") format("embedded-opentype"), url("fonts/wolfate/wolfate.ttf?fgc8uy") format("truetype"), url("fonts/wolfate/wolfate.woff?fgc8uy") format("woff"), url("fonts/wolfate/wolfate.svg?fgc8uy#wolfate") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -72,6 +72,33 @@ img {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-contacts:before {
+  content: "\e049"; }
+
+.icon-contact_phone:before {
+  content: "\e059"; }
+
+.icon-group:before {
+  content: "\e245"; }
+
+.icon-group_add:before {
+  content: "\e246"; }
+
+.icon-person:before {
+  content: "\e253"; }
+
+.icon-person_add:before {
+  content: "\e254"; }
+
+.icon-person_outline:before {
+  content: "\e255"; }
+
+.icon-perm_identity:before {
+  content: "\e2ba"; }
+
+.icon-polymer:before {
+  content: "\e2bf"; }
 
 .icon-wolfate-icon-2:before {
   content: "\e600"; }
@@ -181,8 +208,65 @@ img {
 .icon-camera:before {
   content: "\e623"; }
 
+.icon-drink:before {
+  content: "\e646"; }
+
+.icon-drink2:before {
+  content: "\e647"; }
+
+.icon-coffee:before {
+  content: "\e648"; }
+
+.icon-cake:before {
+  content: "\e649"; }
+
+.icon-suitcase:before {
+  content: "\e64a"; }
+
+.icon-suitcase2:before {
+  content: "\e64b"; }
+
+.icon-picture:before {
+  content: "\e64c"; }
+
+.icon-pictures:before {
+  content: "\e64d"; }
+
+.icon-pictures2:before {
+  content: "\e64e"; }
+
+.icon-cassette:before {
+  content: "\e64f"; }
+
+.icon-watch:before {
+  content: "\e650"; }
+
+.icon-chronometer:before {
+  content: "\e651"; }
+
+.icon-watch2:before {
+  content: "\e652"; }
+
+.icon-alarmclock:before {
+  content: "\e653"; }
+
+.icon-time:before {
+  content: "\e654"; }
+
+.icon-headphones:before {
+  content: "\e655"; }
+
+.icon-wallet:before {
+  content: "\e656"; }
+
 .icon-gamepad:before {
   content: "\e624"; }
+
+.icon-radio:before {
+  content: "\e657"; }
+
+.icon-satellite:before {
+  content: "\e658"; }
 
 .icon-lamp:before {
   content: "\e625"; }
@@ -253,6 +337,15 @@ img {
 .icon-safe:before {
   content: "\e63b"; }
 
+.icon-envelope:before {
+  content: "\e659"; }
+
+.icon-envelope2:before {
+  content: "\e65a"; }
+
+.icon-radioactive:before {
+  content: "\e65b"; }
+
 .icon-heart:before {
   content: "\e63c"; }
 
@@ -261,6 +354,12 @@ img {
 
 .icon-rocket2:before {
   content: "\e63e"; }
+
+.icon-barcode:before {
+  content: "\e65c"; }
+
+.icon-barcode2:before {
+  content: "\e65d"; }
 
 .icon-atom:before {
   content: "\e63f"; }
@@ -291,6 +390,15 @@ img {
 
 .icon-pencil2:before {
   content: "\e906"; }
+
+.icon-droplet:before {
+  content: "\e90b"; }
+
+.icon-paint-format:before {
+  content: "\e90c"; }
+
+.icon-image:before {
+  content: "\e90d"; }
 
 .icon-file-zip:before {
   content: "\e92b"; }
@@ -339,6 +447,24 @@ img {
 
 .icon-floppy-disk:before {
   content: "\e962"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-users:before {
+  content: "\e972"; }
+
+.icon-user-plus:before {
+  content: "\e973"; }
+
+.icon-user-minus:before {
+  content: "\e974"; }
+
+.icon-user-check:before {
+  content: "\e975"; }
+
+.icon-user-tie:before {
+  content: "\e976"; }
 
 .icon-enlarge:before {
   content: "\e989"; }
@@ -578,13 +704,22 @@ body {
   display: block; }
 
 .main-nav {
+  transition: all 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: #2d303d;
+  background-color: rgba(45, 48, 61, 0.7);
   overflow: hidden; }
   .main-nav h1 {
+    transition: all 0.3s;
     display: inline-block;
     float: left;
     padding-left: 20px; }
     .main-nav h1 a {
+      transition: all 0.3s;
       font-size: 31px;
       display: inline-block;
       vertical-align: top;
@@ -598,6 +733,7 @@ body {
         color: #37baff;
         font-weight: 300; }
     .main-nav h1:before {
+      transition: all 0.3s;
       content: "";
       display: inline-block;
       width: 70px;
@@ -624,7 +760,8 @@ body.signup a.signup,
 
 .site-nav {
   float: right;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.5s; }
   .site-nav li {
     float: left;
     padding: 0 24px;
@@ -637,8 +774,9 @@ body.signup a.signup,
     font-weight: 300;
     box-sizing: content-box;
     position: relative;
-    transition: color 0.3s; }
+    transition: all 0.5s; }
     .site-nav a:before {
+      transition: all 0.3s;
       content: "";
       position: absolute;
       top: -3px;
@@ -650,6 +788,21 @@ body.signup a.signup,
       transition: all 0.3s; }
   .site-nav .double a {
     display: inline-block; }
+
+/* NOT TOP */
+.scroll-down {
+  background-color: #2d303d; }
+  .scroll-down h1:before {
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    background-size: 50px auto; }
+  .scroll-down h1 a {
+    padding-top: 0; }
+    .scroll-down h1 a .block {
+      line-height: 15px; }
+  .scroll-down .site-nav a {
+    line-height: 60px; }
 
 /* BUTTONS */
 .btn-dark {
@@ -673,42 +826,105 @@ body.signup a.signup,
     background: #00ACBA; }
 
 .user-registration {
+  position: relative;
   background-image: url(img/defaults/bg-signup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  padding: 40px;
+  padding: 135px 40px 40px 40px;
   overflow: hidden; }
-  .user-registration h2:before {
+
+/* ACCOUNT INFORMATION */
+.account-info {
+  float: left;
+  width: 53%;
+  text-align: right;
+  padding-right: 2%; }
+  .account-info h2 {
+    font-weight: 600;
+    margin-top: -8px;
+    font-size: 50px;
+    padding-bottom: 20px;
+    line-height: 50px;
+    color: #2D303D;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .account-info .advantages {
+    overflow: hidden; }
+    .account-info .advantages li {
+      float: right;
+      font-size: 20px;
+      line-height: 23px;
+      background: rgba(34, 37, 51, 0.8);
+      margin: 0 65px 10px 0;
+      color: #fff;
+      padding: 15px 15px 17px 15px;
+      position: relative; }
+      .account-info .advantages li:before {
+        display: block;
+        font-size: 36px;
+        width: 54px;
+        line-height: 54px;
+        border-radius: 50%;
+        background: rgba(34, 37, 51, 0.8);
+        position: absolute;
+        top: 50%;
+        margin-top: -27px;
+        right: -65px;
+        text-align: center; }
+      .account-info .advantages li:nth-child(1):before {
+        background: rgba(108, 0, 208, 0.5); }
+      .account-info .advantages li:nth-child(2):before {
+        background: rgba(0, 194, 229, 0.6); }
+      .account-info .advantages li:nth-child(3):before {
+        background: rgba(203, 93, 0, 0.6); }
+      .account-info .advantages li:nth-child(4):before {
+        background: rgba(92, 208, 0, 0.6); }
+      .account-info .advantages li:nth-child(5):before {
+        background: rgba(227, 232, 0, 0.54); }
+      .account-info .advantages li:nth-child(6):before {
+        background: rgba(221, 6, 72, 0.5); }
+  .account-info p {
+    padding-top: 40px;
+    text-align: center; }
+
+/* SIGN UP FORM SECTION */
+.signup-section {
+  float: left;
+  width: 40%;
+  padding-left: 5%; }
+  .signup-section h2:before {
     display: inline-block;
     width: 74px;
     line-height: 74px;
     background: #222533;
     position: absolute;
-    top: 0;
+    top: 50%;
+    margin-top: -37px;
     left: 0;
     color: #4B9FDA;
     font-size: 50px;
-    text-align: center; }
-  .user-registration h2,
-  .user-registration label {
+    text-align: center;
+    box-shadow: -100px 0 0 100px #222533; }
+  .signup-section h2,
+  .signup-section label {
     position: relative;
-    line-height: 70px;
-    height: 74px;
+    line-height: 40px;
     color: #fff;
-    padding: 0 20px 0 94px;
+    padding: 10px 20px 15px 94px;
     font-size: 36px;
     font-weight: normal;
     background: rgba(34, 37, 51, 0.8);
     border: 1px solid rgba(34, 37, 51, 0.8);
-    display: inline-block; }
-  .user-registration label {
+    display: inline-block;
+    overflow: hidden; }
+  .signup-section label {
     line-height: 38px;
     height: 38px;
     padding: 0 10px;
     margin-bottom: 10px;
     font-size: 19px; }
-  .user-registration input {
+  .signup-section input {
     border: 1px solid #fff;
     background: rgba(34, 37, 51, 0.2);
     color: #fff;
@@ -717,21 +933,20 @@ body.signup a.signup,
     font-size: 19px;
     outline: none;
     display: block; }
-  .user-registration .signup-section {
-    float: right; }
-  .user-registration .user-account {
+  .signup-section .user-account {
     padding-top: 30px;
     overflow: hidden;
-    width: 480px;
-    margin: 0 auto; }
-    .user-registration .user-account li {
+    width: 480px; }
+    .signup-section .user-account li {
       float: left;
       width: 230px;
       padding-bottom: 20px; }
-      .user-registration .user-account li:nth-child(even) {
+      .signup-section .user-account li:nth-child(even) {
         padding-left: 20px;
         text-align: left; }
-      .user-registration .user-account li:last-child {
+      .signup-section .user-account li:nth-child(odd) {
+        clear: both; }
+      .signup-section .user-account li:last-child {
         width: 100%;
         text-align: center;
         padding-bottom: 0; }
